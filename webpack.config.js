@@ -47,6 +47,9 @@ module.exports = {
         }), // 환경에 따라 api 로직 달리하는 웹팩 플러그인
         new HtmlWebpackPlugin({
             template: './src/index.html',
+            templateParameters: {
+                env: process.env.NODE_ENV === 'development' ? '개발용' : '',
+            },
         }),
     ],
 };
