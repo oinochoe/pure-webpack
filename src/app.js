@@ -1,4 +1,4 @@
-import * as math from './math';
+import * as math from './math.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.querySelector('#btn');
