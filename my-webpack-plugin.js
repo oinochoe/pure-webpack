@@ -9,7 +9,7 @@ class MyPlugin {
             const source = compilation.assets['main.js'].source();
 
             compilation.assets['main.js'].source = function () {
-                const banner = ['/**', `* Build date : ${new Date().toLocaleString()}`, ' */', ''].join('\n');
+                const banner = ['/**', `* Build date : ${new Date().toLocaleString()}`, '*/', ''].join('\n');
                 console.log(banner);
                 return banner + source;
             };
