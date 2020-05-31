@@ -1,4 +1,4 @@
-/*! Build date : 2020-6-1 1:05:02 */
+/*! Build date : 2020-6-1 1:09:22 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -153,7 +153,7 @@ eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtim
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n    const btn = document.querySelector('#btn');\n    const result = document.querySelector('#result');\n\n    btn.addEventListener('click', () => {\n        result.textContent = _math_js__WEBPACK_IMPORTED_MODULE_0__[\"sum\"](1, 2); // 3\n        window.alert(result.textContent);\n    });\n});\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n    const btn = document.querySelector('#btn');\n    const result = document.querySelector('#result');\n\n    btn.addEventListener('click', () => {\n        result.textContent = _math_js__WEBPACK_IMPORTED_MODULE_0__[\"sum\"](1, 2); // 3\n        console.log(result.textContent);\n    });\n});\n\nconsole.log('process.env.NODE_ENV', \"development\");\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 

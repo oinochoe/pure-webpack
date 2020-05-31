@@ -37,5 +37,6 @@ module.exports = {
         new webpack.BannerPlugin(
             `Build date : ${new Date().toLocaleString()}`, // 얘가 원래 webpack에 기본기능으로 있는 찐 플러그인
         ),
+        new webpack.DefinePlugin({}), // 환경에 따라 api 로직 달리하는 웹팩 플러그인
     ],
 };
