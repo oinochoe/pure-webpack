@@ -1,6 +1,7 @@
 const path = require('path');
 const MyWebpackPlugin = require('./my-webpack-plugin');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -27,7 +28,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'url-loader',
                 options: {
-                    publicPath: './dist',
+                    // publicPath: './dist',
                     name: '[name].[ext]?[hash]',
                     limit: 1027424, //1mb
                 },
@@ -44,5 +45,8 @@ module.exports = {
             VERSION: JSON.stringify('v1.2.3'),
             'API.DOMAIN': JSON.stringify('http://api.server.com'),
         }), // 환경에 따라 api 로직 달리하는 웹팩 플러그인
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+        }),
     ],
 };
