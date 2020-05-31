@@ -2,8 +2,10 @@ const path = require('path');
 const MyWebpackPlugin = require('./my-webpack-plugin');
 const webpack = require('webpack');
 
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 module.exports = {
-    mode: 'development',
+    mode: process.env.NODE_ENV,
     entry: {
         main: './src/app.js',
     },
@@ -37,6 +39,10 @@ module.exports = {
         new webpack.BannerPlugin(
             `Build date : ${new Date().toLocaleString()}`, // 얘가 원래 webpack에 기본기능으로 있는 찐 플러그인
         ),
-        new webpack.DefinePlugin({}), // 환경에 따라 api 로직 달리하는 웹팩 플러그인
+        new webpack.DefinePlugin({
+            TWO: '1+1',
+            VERSION: JSON.stringify('v1.2.3'),
+            'API.DOMAIN': JSON.stringify('http://api.server.com'),
+        }), // 환경에 따라 api 로직 달리하는 웹팩 플러그인
     ],
 };

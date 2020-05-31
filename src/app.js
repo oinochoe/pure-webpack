@@ -13,3 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 console.log('process.env.NODE_ENV', process.env.NODE_ENV);
+console.log('TWO', TWO);
+console.log('VERSION', VERSION);
+console.log('API.DOMAIN', API.DOMAIN);
