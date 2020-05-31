@@ -6,5 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btn.addEventListener('click', () => {
         result.textContent = math.sum(1, 2); // 3
+        console.log(result.textContent);
     });
 });

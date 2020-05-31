@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n    const btn = document.querySelector('#btn');\n    const result = document.querySelector('#result');\n\n    btn.addEventListener('click', () => {\n        result.textContent = _math_js__WEBPACK_IMPORTED_MODULE_0__[\"sum\"](1, 2); // 3\n    });\n});\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n    const btn = document.querySelector('#btn');\n    const result = document.querySelector('#result');\n\n    btn.addEventListener('click', () => {\n        result.textContent = _math_js__WEBPACK_IMPORTED_MODULE_0__[\"sum\"](1, 2); // 3\n        window.alert(result.textContent);\n    });\n});\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
